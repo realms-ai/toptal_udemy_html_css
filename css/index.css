@@ -1,0 +1,42 @@
+.container {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header, footer, .content-area {
+  border: 3px solid black;
+}
+
+.content-area p{
+  text-align: justify;
+  margin: 10px;
+}
+
+.left {
+  float: left;
+  width: 25%;
+}
+
+.right {
+  float: left;
+  width: 25%;
+}
+
+.main-content {
+  float: left;
+  width: 50%;
+}
+
+.group::before, .group::after {
+  content: "";
+  display: table;
+}
+
+.group::after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
