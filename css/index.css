@@ -34,14 +34,37 @@ header, footer, .content-area {
   width: 25%;
 }
 
-.right {
-  float: left;
-  width: 25%;
-}
-
 .main-content {
   float: left;
   width: 50%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.squirrel-banner {
+  position: relative;
+  left: 100px;
+}
+
+.squirrel-banner img {
+  display: block;
+}
+
+.squirrel-banner p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+.right {
+  float: left;
+  width: 25%;
+  position: relative;
 }
 
 /* Starting NAV styling */
