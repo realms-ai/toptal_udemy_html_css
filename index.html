@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Test</title>
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -18,9 +19,6 @@
             <li><a href="#">Contact Us</a></li>
           </ul>
         </nav>
-        <div class="navigation">
-          
-        </div>
       </header>
       <div class="content-area group">
         <aside class="left">
@@ -31,6 +29,29 @@
           <section>
             <h1>Section Heading</h1>
             <p>Section Text<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>
+            <form>
+              <label for="email" class="hidden-label">Email</label>
+              <input type="email" name="email" id="email" placeholder="Email" class="input">
+
+              <label for="password" class="hidden-label">Password</label>
+              <input type="password" name="password" id="password" placeholder="Password" class="input">
+
+              <select>
+                <option>Initial view...</option>
+                <option>My Profile</option>
+                <option>Inbox</option>
+                <option>Account Settings</option>
+              </select>
+
+              <input type="submit" value="Sign in">
+              <div class="remember-checkbox">
+                <label>
+                  <input type="checkbox" name="remember" checked="checked" value="yes">
+                  <span class="checkbox-text">Stay signed in</span>
+                </label>
+              </div>
+              
+            </form>
           </section>
           <section>
             <h1>Section Heading</h1>
@@ -78,6 +99,13 @@
           <section>
             <h1>Section Heading</h1>
             <p>Section Text<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>
+            <nav class="ui-menu">
+              <ul class="group">
+                <li class="ui-home"><a href="#">Home</a></li>
+                <li class="ui-profile"><a href="#">Profile</a></li>
+                <li class="ui-settings"><a href="#">Settings</a></li>
+              </ul>
+            </nav>
           </section>
         </div>
         <aside class="right">
