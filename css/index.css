@@ -47,29 +47,44 @@
 /* End Custom Fonts */
 
 html {
-  background-color: #869990;
+  background-color: red;
 }
 
 body {
   font-family: 'PT Sans', Tahoma, sans-serif;
+  margin: 0 !important;
+  padding: 0;   
 }
 
 .container {
+  display: block;
+  max-width: 960px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(240, 236, 229) ;
+  /* background-color: rgb(240, 236, 229) ; */
+  padding: 0 30px; 
 }
 
 aside {
-  background-color: lightcyan;
+  /* background-color: lightcyan; */
   padding: 0 40px;
   box-sizing: border-box;
   font-size: 85%;
 }
 
-header, footer, .content-area {
+/* header, footer, .content-area {
   border: 3px solid lightcyan;
+} */
+
+header {
+  background-color: #617140;
+  color: #FFF;
+  text-align: center;
+}
+
+.content-area {
+  background-color: #FFF;
 }
 
 .content-area p{
@@ -77,14 +92,46 @@ header, footer, .content-area {
   margin: 10px;
 }
 
-.left {
-  float: left;
-  width: 25%;
+@media screen and (max-width: 700px) {
+  .left, .main-content, .right {
+    width: auto;
+    float: none;
+  }
+
+  aside {
+    padding: 0;
+  }
+
+  .squirrel-banner {
+    left: 0;
+  }
+
+  .container {
+    padding: 0 15px;
+    text-align: justify;
+  }
 }
 
-.main-content {
-  float: left;
-  width: 50%;
+@media screen and (min-width: 700px) and (max-width: 1600px) {
+  .left {
+    float: left;
+    width: 25%;
+  }
+  
+  .main-content {
+    float: left;
+    width: 50%;
+  }
+  
+  .right {
+    float: left;
+    width: 25%;
+    position: relative;
+  }
+
+  .squirrel-banner {
+    left: 100px;
+  }
 }
 
 /* Starting Image Banner Styling */
@@ -95,7 +142,6 @@ img {
 
 .squirrel-banner {
   position: relative;
-  left: 100px;
 }
 
 .squirrel-banner img {
@@ -209,12 +255,6 @@ input[type="submit"]:focus {
 
 /* End Form Styles */
 
-.right {
-  float: left;
-  width: 25%;
-  position: relative;
-}
-
 /* Starting NAV styling */
 .navbar {
   margin-top: 20px;
@@ -230,6 +270,27 @@ input[type="submit"]:focus {
   float: left;
   
 }
+
+@media screen and (max-width: 700px) {
+  .navbar ul {
+    margin-left: 0;
+  }
+
+  .navbar li {
+    width: 33.332%
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar ul {
+    margin-left: 0;
+  }
+
+  .navbar li {
+    width: 50%
+  }
+}
+
 .navbar a {
   display: block;
   padding: 10px 20px;
