@@ -238,11 +238,13 @@ header p {
 
 /* Add Your Grid Code Here */
 .row {
+	display: flex;
+	flex-wrap: wrap;
 	padding-right: -20px;
 }
 
 .col {
-	float: left;
+	/* float: left; */
 	width: 100%;
 	padding-right: 20px;
 	box-sizing: border-box;
