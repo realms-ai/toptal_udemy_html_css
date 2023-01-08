@@ -1,0 +1,39 @@
+// npx sass --watch 19_SASS/css/sass/*.sass 19_SASS/css/output.css
+// Run above command to convert sass file to css
+// Install package.json and run "npm run sass"
+// Variables starting with $name
+// Nesting
+// Inheritance or Extending @extend
+// Splitting up code in smaller files / @import
+// Mixins: a great tool to pick two colors and mix them for all browsers in a simple way
+// Operators (Arithmetic calculations e.g. 10px + 20px)
+// sass-lang.com
+
+// Importing partial files
+@import "mixins"
+
+// Creating Variables
+$beautifulHue: orange
+
+.btn-a
+  padding: 6px 10px
+  border-radius: 5px
+  font-weight: bold
+  text-transform: uppercase
+  background-color: #365267
+  color: #fff
+  font-size: 84%
+  margin-left: 10px
+  @include bp-babyBear
+    padding: 100px 10px
+
+.btn-b
+  @extend .btn-a
+  @include verticalGradient(white, lighten($beautifulHue, 10%))
+
+.box
+  padding: 10px
+
+p
+  color: orange
+  margin: 10px
