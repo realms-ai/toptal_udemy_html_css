@@ -1,0 +1,14 @@
+1. Video 1: 
+  a. Responsive Design
+  b. CSS3 animations, effects, transitions
+  c. SASS
+
+2. Video 12:
+  a. Adding audio and controls
+  b. List of sources and allow browser to change the source which they support in priority
+3. Video 13 is related to tag VIDEO and works similar to AUDIO
+4. Video 14 Vector Graphics (Figma or Adobe XD)
+5. Video 19 Use of (header, footer, article, aside and use them as children) (Semantic structured elements)
+6. Video 21 (Div => block level, Span => inline)
+7. Video 23 (Use of section for non-structured elements)
+8. Video 34 (Use of floats and clear them)
